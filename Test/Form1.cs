@@ -1,3 +1,5 @@
+using System.Drawing.Drawing2D;
+
 namespace Test
 {
     public partial class Form1 : Form
@@ -53,6 +55,21 @@ namespace Test
         }
 
         private void hiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton9_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton9_Paint(object sender, PaintEventArgs e)
+        {
+
+
+        }
+        private void toolStripButton9_LocationChanged(object sender, EventArgs e)
         {
 
         }
