@@ -1,6 +1,6 @@
 ﻿namespace Test
 {
-    partial class Form1
+    partial class Home
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             toolStrip1 = new ToolStrip();
             toolStripTextBox1 = new ToolStripTextBox();
             toolStripButton3 = new ToolStripButton();
