@@ -29,7 +29,7 @@ namespace Test
 
         private void Login_Load(object sender, EventArgs e)
         {
-            cn = new SqlConnection(@"Data Source=DESKTOP-NNTQ8PP\SQLEXPRESS;Initial Catalog=database;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security=True");
+            cn = new SqlConnection(@"Data Source=DESKTOP-NNTQ8PP\SQLEXPRESS;Initial Catalog=LoginDatabse;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security=True");
             cn.Open();
         }
 

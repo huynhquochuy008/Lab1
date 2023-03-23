@@ -24,7 +24,7 @@ namespace Test
 
         private void Registration_Load(object sender, EventArgs e)
         {
-            cn = new SqlConnection(@"Data Source=DESKTOP-NNTQ8PP\SQLEXPRESS;Initial Catalog=Database;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security=True");
+            cn = new SqlConnection(@"Data Source=DESKTOP-NNTQ8PP\SQLEXPRESS;Initial Catalog=LoginDatabse;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security=True");
             cn.Open();
         }
 
@@ -51,9 +51,9 @@ namespace Test
                     else
                     {
                         dr.Close();
-                        cmd = new SqlCommand("insert into LoginTable values(@Username,@Password)", cn);
-                        cmd.Parameters.AddWithValue("Username", txtusername.Text);
-                        cmd.Parameters.AddWithValue("Password", txtpassword.Text);
+                        cmd = new SqlCommand("insert into LoginTable values(@username,@password)", cn);
+                        cmd.Parameters.AddWithValue("username", txtusername.Text);
+                        cmd.Parameters.AddWithValue("password", txtpassword.Text);
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Your Account is created . Please login now.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
