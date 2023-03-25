@@ -73,5 +73,33 @@ namespace Test
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cart cart = new Cart();
+            cart.ShowDialog();
+        }
+
+        private void AddToCart2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cart cart = new Cart();
+            cart.ShowDialog();
+        }
+
+        private void AddToCart3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cart cart = new Cart();
+            cart.ShowDialog();
+        }
+
+        private void AddToCart4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cart cart = new Cart();
+            cart.ShowDialog();
+        }
     }
 }
