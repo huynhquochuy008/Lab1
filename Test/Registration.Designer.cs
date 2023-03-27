@@ -40,9 +40,10 @@
             // 
             // btnHaveAccount
             // 
-            btnHaveAccount.Location = new Point(174, 217);
+            btnHaveAccount.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnHaveAccount.Location = new Point(286, 327);
             btnHaveAccount.Name = "btnHaveAccount";
-            btnHaveAccount.Size = new Size(224, 23);
+            btnHaveAccount.Size = new Size(264, 51);
             btnHaveAccount.TabIndex = 11;
             btnHaveAccount.Text = "Have Account ? Login Now";
             btnHaveAccount.UseVisualStyleBackColor = true;
@@ -50,7 +51,7 @@
             // 
             // txtpassword
             // 
-            txtpassword.Location = new Point(191, 91);
+            txtpassword.Location = new Point(307, 123);
             txtpassword.Name = "txtpassword";
             txtpassword.Size = new Size(207, 23);
             txtpassword.TabIndex = 9;
@@ -58,34 +59,38 @@
             // 
             // txtusername
             // 
-            txtusername.Location = new Point(191, 49);
+            txtusername.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            txtusername.Location = new Point(307, 81);
             txtusername.Name = "txtusername";
-            txtusername.Size = new Size(207, 23);
+            txtusername.Size = new Size(207, 27);
             txtusername.TabIndex = 8;
             // 
             // lb_pwd
             // 
             lb_pwd.AutoSize = true;
-            lb_pwd.Location = new Point(46, 94);
+            lb_pwd.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_pwd.Location = new Point(132, 127);
             lb_pwd.Name = "lb_pwd";
-            lb_pwd.Size = new Size(87, 15);
+            lb_pwd.Size = new Size(136, 19);
             lb_pwd.TabIndex = 7;
             lb_pwd.Text = "Enter Password";
             // 
             // lb_username
             // 
             lb_username.AutoSize = true;
-            lb_username.Location = new Point(46, 52);
+            lb_username.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_username.Location = new Point(132, 84);
             lb_username.Name = "lb_username";
-            lb_username.Size = new Size(90, 15);
+            lb_username.Size = new Size(140, 19);
             lb_username.TabIndex = 6;
             lb_username.Text = "Enter Username\r\n";
             // 
             // btnRegister
             // 
-            btnRegister.Location = new Point(232, 178);
+            btnRegister.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRegister.Location = new Point(338, 256);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(113, 23);
+            btnRegister.Size = new Size(153, 51);
             btnRegister.TabIndex = 14;
             btnRegister.Text = "Register Now";
             btnRegister.UseVisualStyleBackColor = true;
@@ -93,7 +98,7 @@
             // 
             // txtconfirmpassword
             // 
-            txtconfirmpassword.Location = new Point(191, 137);
+            txtconfirmpassword.Location = new Point(307, 169);
             txtconfirmpassword.Name = "txtconfirmpassword";
             txtconfirmpassword.Size = new Size(207, 23);
             txtconfirmpassword.TabIndex = 13;
@@ -102,9 +107,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(46, 140);
+            label1.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(132, 173);
             label1.Name = "label1";
-            label1.Size = new Size(104, 15);
+            label1.Size = new Size(156, 19);
             label1.TabIndex = 12;
             label1.Text = "Confirm Password";
             // 
@@ -112,6 +118,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Info;
             ClientSize = new Size(800, 450);
             Controls.Add(btnRegister);
             Controls.Add(txtconfirmpassword);

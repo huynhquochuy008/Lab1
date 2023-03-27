@@ -34,67 +34,91 @@
             txtpassword = new TextBox();
             btnLogin = new Button();
             btnregister = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lb_username
             // 
             lb_username.AutoSize = true;
-            lb_username.Location = new Point(24, 37);
+            lb_username.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_username.Location = new Point(56, 73);
             lb_username.Name = "lb_username";
-            lb_username.Size = new Size(90, 15);
+            lb_username.Size = new Size(136, 19);
             lb_username.TabIndex = 0;
-            lb_username.Text = "Enter Username\r\n";
+            lb_username.Text = "Tên người dùng";
             lb_username.Click += lb_username_Click;
             // 
             // lb_pwd
             // 
             lb_pwd.AutoSize = true;
-            lb_pwd.Location = new Point(24, 77);
+            lb_pwd.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_pwd.Location = new Point(56, 184);
             lb_pwd.Name = "lb_pwd";
-            lb_pwd.Size = new Size(87, 15);
+            lb_pwd.Size = new Size(85, 19);
             lb_pwd.TabIndex = 1;
-            lb_pwd.Text = "Enter Password";
+            lb_pwd.Text = "Mật khẩu";
             // 
             // txtusername
             // 
-            txtusername.Location = new Point(169, 34);
+            txtusername.Location = new Point(56, 103);
+            txtusername.Multiline = true;
             txtusername.Name = "txtusername";
-            txtusername.Size = new Size(207, 23);
+            txtusername.Size = new Size(332, 49);
             txtusername.TabIndex = 2;
             // 
             // txtpassword
             // 
-            txtpassword.Location = new Point(169, 74);
+            txtpassword.Location = new Point(56, 218);
+            txtpassword.Multiline = true;
             txtpassword.Name = "txtpassword";
-            txtpassword.Size = new Size(207, 23);
+            txtpassword.Size = new Size(332, 53);
             txtpassword.TabIndex = 3;
             txtpassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(224, 125);
+            btnLogin.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnLogin.BackColor = SystemColors.MenuBar;
+            btnLogin.FlatStyle = FlatStyle.System;
+            btnLogin.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogin.Location = new Point(132, 299);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(75, 23);
+            btnLogin.Size = new Size(165, 46);
             btnLogin.TabIndex = 4;
-            btnLogin.Text = "Login";
-            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Text = "Đăng nhập";
+            btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
             // btnregister
             // 
-            btnregister.Location = new Point(152, 173);
+            btnregister.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnregister.ForeColor = SystemColors.MenuHighlight;
+            btnregister.Location = new Point(95, 387);
             btnregister.Name = "btnregister";
-            btnregister.Size = new Size(224, 23);
+            btnregister.Size = new Size(246, 44);
             btnregister.TabIndex = 5;
-            btnregister.Text = "Don't Have Account ? Create Now";
+            btnregister.Text = "Chưa có tài khoản";
             btnregister.UseVisualStyleBackColor = true;
             btnregister.Click += btnregister_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources._330843926_3118216035139614_1960655562366559732_n;
+            pictureBox1.Location = new Point(535, -9);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1365, 2048);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Info;
             ClientSize = new Size(1134, 548);
+            Controls.Add(pictureBox1);
             Controls.Add(btnregister);
             Controls.Add(btnLogin);
             Controls.Add(txtpassword);
@@ -105,6 +129,7 @@
             Name = "Login";
             Text = "Login";
             Load += Login_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -117,5 +142,6 @@
         private TextBox txtpassword;
         private Button btnLogin;
         private Button btnregister;
+        private PictureBox pictureBox1;
     }
 }

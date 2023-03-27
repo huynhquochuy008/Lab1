@@ -101,5 +101,12 @@ namespace Test
             Cart cart = new Cart();
             cart.ShowDialog();
         }
+
+        private void toolStripButton11_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Profile profile = new Profile();
+            profile.ShowDialog();
+        }
     }
 }
