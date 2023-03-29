@@ -108,5 +108,10 @@ namespace Test
             Profile profile = new Profile();
             profile.ShowDialog();
         }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
