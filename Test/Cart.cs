@@ -17,19 +17,12 @@ namespace Test
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void toolStripButton16_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void toolStripButton5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
-        }
-
-        private void Cart_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

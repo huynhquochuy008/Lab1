@@ -91,6 +91,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
             // 
             // btnregister
             // 
@@ -131,6 +132,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

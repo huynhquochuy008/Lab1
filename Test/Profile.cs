@@ -52,5 +52,12 @@ namespace Test
             }
             dgv_lsmh.DataSource = dt;
         }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
+        }
     }
 }
