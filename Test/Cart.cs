@@ -26,5 +26,12 @@ namespace Test
         {
 
         }
+
+        private void toolStripButton9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cart cart = new Cart();
+            cart.ShowDialog();
+        }
     }
 }
