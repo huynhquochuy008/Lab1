@@ -28,5 +28,10 @@ namespace Test
             Home home = new Home();
             home.ShowDialog();
         }
+
+        private void Cart_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

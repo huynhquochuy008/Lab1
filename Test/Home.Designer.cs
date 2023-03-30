@@ -77,28 +77,26 @@
             toolStripButton10 = new ToolStripButton();
             toolStripButton11 = new ToolStripButton();
             toolStripButton12 = new ToolStripButton();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            AddToCart = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            pictureBox4 = new PictureBox();
-            label4 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
             toolStrip3 = new ToolStrip();
             toolStripButton13 = new ToolStripButton();
             toolStripLabel1 = new ToolStripLabel();
+            toolStripButton14 = new ToolStripButton();
+            toolStripButton15 = new ToolStripButton();
+            toolStrip4 = new ToolStrip();
+            toolStripButton16 = new ToolStripButton();
+            toolStripLabel2 = new ToolStripLabel();
+            toolStripButton17 = new ToolStripButton();
+            toolStripButton18 = new ToolStripButton();
+            toolStrip5 = new ToolStrip();
+            toolStripButton19 = new ToolStripButton();
+            toolStripLabel3 = new ToolStripLabel();
+            toolStripButton20 = new ToolStripButton();
+            toolStripButton21 = new ToolStripButton();
             toolStrip1.SuspendLayout();
             toolStrip2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             toolStrip3.SuspendLayout();
+            toolStrip4.SuspendLayout();
+            toolStrip5.SuspendLayout();
             SuspendLayout();
             // 
             // toolStrip1
@@ -545,146 +543,17 @@
             toolStripButton12.Size = new Size(180, 42);
             toolStripButton12.Text = "   Bạn cần tìm gì";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(45, 194);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(328, 215);
-            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(516, 194);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(328, 215);
-            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(969, 194);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(328, 215);
-            pictureBox3.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox3.TabIndex = 6;
-            pictureBox3.TabStop = false;
-            // 
-            // AddToCart
-            // 
-            AddToCart.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            AddToCart.Location = new Point(70, 492);
-            AddToCart.Name = "AddToCart";
-            AddToCart.Padding = new Padding(10);
-            AddToCart.Size = new Size(260, 67);
-            AddToCart.TabIndex = 7;
-            AddToCart.Text = "Add to cart";
-            AddToCart.UseVisualStyleBackColor = true;
-            AddToCart.Click += button1_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.MenuHighlight;
-            label1.Location = new Point(144, 423);
-            label1.Name = "label1";
-            label1.Size = new Size(127, 48);
-            label1.TabIndex = 10;
-            label1.Text = "Bitis1";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.MenuHighlight;
-            label2.Location = new Point(617, 423);
-            label2.Name = "label2";
-            label2.Size = new Size(127, 48);
-            label2.TabIndex = 11;
-            label2.Text = "Bitis2";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Arial Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.MenuHighlight;
-            label3.Location = new Point(1060, 423);
-            label3.Name = "label3";
-            label3.Size = new Size(127, 48);
-            label3.TabIndex = 12;
-            label3.Text = "Bitis3";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(1414, 194);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(328, 215);
-            pictureBox4.SizeMode = PictureBoxSizeMode.CenterImage;
-            pictureBox4.TabIndex = 13;
-            pictureBox4.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Arial Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.MenuHighlight;
-            label4.Location = new Point(1524, 423);
-            label4.Name = "label4";
-            label4.Size = new Size(127, 48);
-            label4.TabIndex = 14;
-            label4.Text = "Bitis4";
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(540, 492);
-            button1.Name = "button1";
-            button1.Padding = new Padding(10);
-            button1.Size = new Size(260, 67);
-            button1.TabIndex = 18;
-            button1.Text = "Add to cart";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(969, 492);
-            button2.Name = "button2";
-            button2.Padding = new Padding(10);
-            button2.Size = new Size(260, 67);
-            button2.TabIndex = 19;
-            button2.Text = "Add to cart";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(1402, 492);
-            button3.Name = "button3";
-            button3.Padding = new Padding(10);
-            button3.Size = new Size(260, 67);
-            button3.TabIndex = 20;
-            button3.Text = "Add to cart";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // toolStrip3
             // 
             toolStrip3.AutoSize = false;
             toolStrip3.Dock = DockStyle.None;
             toolStrip3.GripStyle = ToolStripGripStyle.Hidden;
             toolStrip3.ImageScalingSize = new Size(20, 20);
-            toolStrip3.Items.AddRange(new ToolStripItem[] { toolStripButton13, toolStripLabel1 });
+            toolStrip3.Items.AddRange(new ToolStripItem[] { toolStripButton13, toolStripLabel1, toolStripButton14, toolStripButton15 });
             toolStrip3.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
-            toolStrip3.Location = new Point(287, 423);
+            toolStrip3.Location = new Point(59, 177);
             toolStrip3.Name = "toolStrip3";
-            toolStrip3.Size = new Size(450, 450);
+            toolStrip3.Size = new Size(440, 577);
             toolStrip3.TabIndex = 21;
             toolStrip3.Text = "toolStrip3";
             // 
@@ -694,7 +563,6 @@
             toolStripButton13.BackgroundImage = Properties.Resources._330843926_3118216035139614_1960655562366559732_n;
             toolStripButton13.BackgroundImageLayout = ImageLayout.Stretch;
             toolStripButton13.DisplayStyle = ToolStripItemDisplayStyle.Image;
-            toolStripButton13.Image = (Image)resources.GetObject("toolStripButton13.Image");
             toolStripButton13.ImageTransparentColor = Color.Magenta;
             toolStripButton13.Name = "toolStripButton13";
             toolStripButton13.Size = new Size(450, 400);
@@ -702,10 +570,153 @@
             // 
             // toolStripLabel1
             // 
+            toolStripLabel1.AutoSize = false;
+            toolStripLabel1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(448, 20);
-            toolStripLabel1.Text = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(450, 50);
+            toolStripLabel1.Text = "Bitis 1";
             toolStripLabel1.Click += toolStripLabel1_Click;
+            // 
+            // toolStripButton14
+            // 
+            toolStripButton14.AutoSize = false;
+            toolStripButton14.BackColor = SystemColors.GradientInactiveCaption;
+            toolStripButton14.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton14.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            toolStripButton14.ForeColor = SystemColors.Highlight;
+            toolStripButton14.Image = (Image)resources.GetObject("toolStripButton14.Image");
+            toolStripButton14.ImageTransparentColor = Color.Magenta;
+            toolStripButton14.Name = "toolStripButton14";
+            toolStripButton14.Size = new Size(450, 50);
+            toolStripButton14.Text = "Add to cart";
+            // 
+            // toolStripButton15
+            // 
+            toolStripButton15.AutoSize = false;
+            toolStripButton15.BackColor = SystemColors.HighlightText;
+            toolStripButton15.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton15.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            toolStripButton15.Image = (Image)resources.GetObject("toolStripButton15.Image");
+            toolStripButton15.ImageTransparentColor = Color.Magenta;
+            toolStripButton15.Name = "toolStripButton15";
+            toolStripButton15.Size = new Size(450, 40);
+            toolStripButton15.Text = "Detail";
+            // 
+            // toolStrip4
+            // 
+            toolStrip4.AutoSize = false;
+            toolStrip4.Dock = DockStyle.None;
+            toolStrip4.GripStyle = ToolStripGripStyle.Hidden;
+            toolStrip4.ImageScalingSize = new Size(20, 20);
+            toolStrip4.Items.AddRange(new ToolStripItem[] { toolStripButton16, toolStripLabel2, toolStripButton17, toolStripButton18 });
+            toolStrip4.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
+            toolStrip4.Location = new Point(690, 177);
+            toolStrip4.Name = "toolStrip4";
+            toolStrip4.Size = new Size(440, 577);
+            toolStrip4.TabIndex = 22;
+            toolStrip4.Text = "toolStrip4";
+            // 
+            // toolStripButton16
+            // 
+            toolStripButton16.AutoSize = false;
+            toolStripButton16.BackgroundImage = Properties.Resources._330843926_3118216035139614_1960655562366559732_n;
+            toolStripButton16.BackgroundImageLayout = ImageLayout.Stretch;
+            toolStripButton16.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton16.ImageTransparentColor = Color.Magenta;
+            toolStripButton16.Name = "toolStripButton16";
+            toolStripButton16.Size = new Size(450, 400);
+            toolStripButton16.Text = "toolStripButton13";
+            // 
+            // toolStripLabel2
+            // 
+            toolStripLabel2.AutoSize = false;
+            toolStripLabel2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            toolStripLabel2.Name = "toolStripLabel2";
+            toolStripLabel2.Size = new Size(450, 50);
+            toolStripLabel2.Text = "Bitis 1";
+            // 
+            // toolStripButton17
+            // 
+            toolStripButton17.AutoSize = false;
+            toolStripButton17.BackColor = SystemColors.GradientInactiveCaption;
+            toolStripButton17.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton17.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            toolStripButton17.ForeColor = SystemColors.Highlight;
+            toolStripButton17.Image = (Image)resources.GetObject("toolStripButton17.Image");
+            toolStripButton17.ImageTransparentColor = Color.Magenta;
+            toolStripButton17.Name = "toolStripButton17";
+            toolStripButton17.Size = new Size(450, 50);
+            toolStripButton17.Text = "Add to cart";
+            // 
+            // toolStripButton18
+            // 
+            toolStripButton18.AutoSize = false;
+            toolStripButton18.BackColor = SystemColors.HighlightText;
+            toolStripButton18.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton18.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            toolStripButton18.Image = (Image)resources.GetObject("toolStripButton18.Image");
+            toolStripButton18.ImageTransparentColor = Color.Magenta;
+            toolStripButton18.Name = "toolStripButton18";
+            toolStripButton18.Size = new Size(450, 40);
+            toolStripButton18.Text = "Detail";
+            // 
+            // toolStrip5
+            // 
+            toolStrip5.AutoSize = false;
+            toolStrip5.Dock = DockStyle.None;
+            toolStrip5.GripStyle = ToolStripGripStyle.Hidden;
+            toolStrip5.ImageScalingSize = new Size(20, 20);
+            toolStrip5.Items.AddRange(new ToolStripItem[] { toolStripButton19, toolStripLabel3, toolStripButton20, toolStripButton21 });
+            toolStrip5.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
+            toolStrip5.Location = new Point(1313, 177);
+            toolStrip5.Name = "toolStrip5";
+            toolStrip5.Size = new Size(440, 577);
+            toolStrip5.TabIndex = 23;
+            toolStrip5.Text = "toolStrip5";
+            // 
+            // toolStripButton19
+            // 
+            toolStripButton19.AutoSize = false;
+            toolStripButton19.BackgroundImage = Properties.Resources._330843926_3118216035139614_1960655562366559732_n;
+            toolStripButton19.BackgroundImageLayout = ImageLayout.Stretch;
+            toolStripButton19.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton19.ImageTransparentColor = Color.Magenta;
+            toolStripButton19.Name = "toolStripButton19";
+            toolStripButton19.Size = new Size(450, 400);
+            toolStripButton19.Text = "toolStripButton13";
+            // 
+            // toolStripLabel3
+            // 
+            toolStripLabel3.AutoSize = false;
+            toolStripLabel3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            toolStripLabel3.Name = "toolStripLabel3";
+            toolStripLabel3.Size = new Size(450, 50);
+            toolStripLabel3.Text = "Bitis 1";
+            // 
+            // toolStripButton20
+            // 
+            toolStripButton20.AutoSize = false;
+            toolStripButton20.BackColor = SystemColors.GradientInactiveCaption;
+            toolStripButton20.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton20.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            toolStripButton20.ForeColor = SystemColors.Highlight;
+            toolStripButton20.Image = (Image)resources.GetObject("toolStripButton20.Image");
+            toolStripButton20.ImageTransparentColor = Color.Magenta;
+            toolStripButton20.Name = "toolStripButton20";
+            toolStripButton20.Size = new Size(450, 50);
+            toolStripButton20.Text = "Add to cart";
+            // 
+            // toolStripButton21
+            // 
+            toolStripButton21.AutoSize = false;
+            toolStripButton21.BackColor = SystemColors.HighlightText;
+            toolStripButton21.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            toolStripButton21.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            toolStripButton21.Image = (Image)resources.GetObject("toolStripButton21.Image");
+            toolStripButton21.ImageTransparentColor = Color.Magenta;
+            toolStripButton21.Name = "toolStripButton21";
+            toolStripButton21.Size = new Size(450, 40);
+            toolStripButton21.Text = "Detail";
             // 
             // Home
             // 
@@ -713,19 +724,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Info;
             ClientSize = new Size(1803, 931);
+            Controls.Add(toolStrip5);
+            Controls.Add(toolStrip4);
             Controls.Add(toolStrip3);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label4);
-            Controls.Add(pictureBox4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(AddToCart);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             Controls.Add(toolStrip2);
             Controls.Add(toolStrip1);
             Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -737,12 +738,12 @@
             toolStrip1.PerformLayout();
             toolStrip2.ResumeLayout(false);
             toolStrip2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             toolStrip3.ResumeLayout(false);
             toolStrip3.PerformLayout();
+            toolStrip4.ResumeLayout(false);
+            toolStrip4.PerformLayout();
+            toolStrip5.ResumeLayout(false);
+            toolStrip5.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -797,20 +798,20 @@
         private ToolStripButton toolStripButton10;
         private ToolStripButton toolStripButton11;
         private ToolStripButton toolStripButton12;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private Button AddToCart;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private PictureBox pictureBox4;
-        private Label label4;
-        private Button button1;
-        private Button button2;
-        private Button button3;
         private ToolStrip toolStrip3;
         private ToolStripButton toolStripButton13;
         private ToolStripLabel toolStripLabel1;
+        private ToolStripButton toolStripButton14;
+        private ToolStripButton toolStripButton15;
+        private ToolStrip toolStrip4;
+        private ToolStripButton toolStripButton16;
+        private ToolStripLabel toolStripLabel2;
+        private ToolStripButton toolStripButton17;
+        private ToolStripButton toolStripButton18;
+        private ToolStrip toolStrip5;
+        private ToolStripButton toolStripButton19;
+        private ToolStripLabel toolStripLabel3;
+        private ToolStripButton toolStripButton20;
+        private ToolStripButton toolStripButton21;
     }
 }
