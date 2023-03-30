@@ -17,11 +17,6 @@ namespace Test
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -39,6 +34,11 @@ namespace Test
             this.Hide();
             Home home = new Home();
             home.ShowDialog();
+        }
+
+        private void Detail_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

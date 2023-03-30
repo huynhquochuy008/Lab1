@@ -29,114 +29,108 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.lb_username = new System.Windows.Forms.Label();
-            this.lb_pwd = new System.Windows.Forms.Label();
-            this.txtusername = new System.Windows.Forms.TextBox();
-            this.txtpassword = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.btnregister = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            lb_username = new Label();
+            lb_pwd = new Label();
+            txtusername = new TextBox();
+            txtpassword = new TextBox();
+            btnLogin = new Button();
+            btnregister = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // lb_username
             // 
-            this.lb_username.AutoSize = true;
-            this.lb_username.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_username.Location = new System.Drawing.Point(64, 97);
-            this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(169, 24);
-            this.lb_username.TabIndex = 0;
-            this.lb_username.Text = "Tên người dùng";
+            lb_username.AutoSize = true;
+            lb_username.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_username.Location = new Point(56, 73);
+            lb_username.Name = "lb_username";
+            lb_username.Size = new Size(136, 19);
+            lb_username.TabIndex = 0;
+            lb_username.Text = "Tên người dùng";
             // 
             // lb_pwd
             // 
-            this.lb_pwd.AutoSize = true;
-            this.lb_pwd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lb_pwd.Location = new System.Drawing.Point(64, 245);
-            this.lb_pwd.Name = "lb_pwd";
-            this.lb_pwd.Size = new System.Drawing.Size(104, 24);
-            this.lb_pwd.TabIndex = 1;
-            this.lb_pwd.Text = "Mật khẩu";
+            lb_pwd.AutoSize = true;
+            lb_pwd.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lb_pwd.Location = new Point(56, 184);
+            lb_pwd.Name = "lb_pwd";
+            lb_pwd.Size = new Size(85, 19);
+            lb_pwd.TabIndex = 1;
+            lb_pwd.Text = "Mật khẩu";
             // 
             // txtusername
             // 
-            this.txtusername.Location = new System.Drawing.Point(64, 137);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtusername.Multiline = true;
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(379, 64);
-            this.txtusername.TabIndex = 2;
+            txtusername.Location = new Point(56, 103);
+            txtusername.Multiline = true;
+            txtusername.Name = "txtusername";
+            txtusername.Size = new Size(332, 49);
+            txtusername.TabIndex = 2;
             // 
             // txtpassword
             // 
-            this.txtpassword.Location = new System.Drawing.Point(64, 291);
-            this.txtpassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtpassword.Multiline = true;
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(379, 69);
-            this.txtpassword.TabIndex = 3;
-            this.txtpassword.UseSystemPasswordChar = true;
+            txtpassword.Location = new Point(56, 218);
+            txtpassword.Multiline = true;
+            txtpassword.Name = "txtpassword";
+            txtpassword.Size = new Size(332, 53);
+            txtpassword.TabIndex = 3;
             // 
             // btnLogin
             // 
-            this.btnLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnLogin.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnLogin.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.Location = new System.Drawing.Point(151, 399);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(189, 61);
-            this.btnLogin.TabIndex = 4;
-            this.btnLogin.Text = "Đăng nhập";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
+            btnLogin.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnLogin.BackColor = SystemColors.MenuBar;
+            btnLogin.FlatStyle = FlatStyle.System;
+            btnLogin.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogin.Location = new Point(132, 299);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(165, 46);
+            btnLogin.TabIndex = 4;
+            btnLogin.Text = "Đăng nhập";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click_1;
             // 
             // btnregister
             // 
-            this.btnregister.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnregister.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnregister.Location = new System.Drawing.Point(109, 516);
-            this.btnregister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnregister.Name = "btnregister";
-            this.btnregister.Size = new System.Drawing.Size(281, 59);
-            this.btnregister.TabIndex = 5;
-            this.btnregister.Text = "Chưa có tài khoản";
-            this.btnregister.UseVisualStyleBackColor = true;
+            btnregister.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnregister.ForeColor = SystemColors.MenuHighlight;
+            btnregister.Location = new Point(95, 387);
+            btnregister.Name = "btnregister";
+            btnregister.Size = new Size(246, 44);
+            btnregister.TabIndex = 5;
+            btnregister.Text = "Chưa có tài khoản";
+            btnregister.UseVisualStyleBackColor = true;
+            btnregister.Click += btnregister_Click_1;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(599, 84);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(587, 571);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(524, 63);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(514, 428);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1296, 731);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnregister);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtpassword);
-            this.Controls.Add(this.txtusername);
-            this.Controls.Add(this.lb_pwd);
-            this.Controls.Add(this.lb_username);
-            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.Name = "Login";
-            this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.InactiveCaption;
+            ClientSize = new Size(1134, 548);
+            Controls.Add(pictureBox1);
+            Controls.Add(btnregister);
+            Controls.Add(btnLogin);
+            Controls.Add(txtpassword);
+            Controls.Add(txtusername);
+            Controls.Add(lb_pwd);
+            Controls.Add(lb_username);
+            Margin = new Padding(2, 1, 2, 1);
+            Name = "Login";
+            Text = "Login";
+            Load += Login_Load_1;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

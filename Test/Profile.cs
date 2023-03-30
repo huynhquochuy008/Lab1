@@ -22,23 +22,20 @@ namespace Test
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void toolStripButton5_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void Profile_Load(object sender, EventArgs e)
+        private void Profile_Load_1(object sender, EventArgs e)
         {
             cn = new SqlConnection(@"Data Source=DESKTOP-NNTQ8PP\SQLEXPRESS;Initial Catalog=LoginDatabse;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security=True");
             cn.Open();
         }
 
-        private void btn_lsmh_Click(object sender, EventArgs e)
+        private void btn_lsmh_Click_1(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
             using (cn)
@@ -51,13 +48,6 @@ namespace Test
                 }
             }
             dgv_lsmh.DataSource = dt;
-        }
-
-        private void toolStripButton5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
         }
     }
 }

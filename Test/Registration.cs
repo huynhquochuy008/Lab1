@@ -28,14 +28,7 @@ namespace Test
             cn.Open();
         }
 
-        private void btnHaveAccount_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login login = new Login();
-            login.ShowDialog();
-        }
-
-        private void btnRegister_Click(object sender, EventArgs e)
+        private void btnRegister_Click_1(object sender, EventArgs e)
         {
             if (txtconfirmpassword.Text != string.Empty || txtpassword.Text != string.Empty || txtusername.Text != string.Empty)
             {
@@ -67,6 +60,13 @@ namespace Test
             {
                 MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnHaveAccount_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
         }
     }
 }
