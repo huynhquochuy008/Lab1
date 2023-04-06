@@ -21,7 +21,7 @@ namespace Test
         {
             InitializeComponent();
         }
-        
+
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
             //if (txtpassword.Text != string.Empty || txtusername.Text != string.Empty)
@@ -77,6 +77,26 @@ namespace Test
             this.Hide();
             Registration registration = new Registration();
             registration.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
+        }
+
+        private void btnregister_Click_2(object sender, EventArgs e)
+        {
+            tabPage2 = new TabPage();
+            tabPage2.Show();
+        }
+
+        private void btnLogin_Click_2(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
         }
     }
 }

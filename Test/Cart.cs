@@ -78,5 +78,31 @@ namespace Test
             Home home = new Home();
             home.ShowDialog();
         }
+
+        private void dgv_lsmh_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_lsmh_Click_1(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            using (cn)
+            {
+                using (SqlCommand cmd = new SqlCommand("SelectAllPurchases", cn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    dt.Load(reader);
+                }
+            }
+            dgv_lsmh.DataSource = dt;
+        }
+
+        private void Cart_Load_1(object sender, EventArgs e)
+        {
+            cn = new SqlConnection(@"Data Source=DESKTOP-NNTQ8PP\SQLEXPRESS;Initial Catalog=LoginDatabse;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security=True");
+            cn.Open();
+        }
     }
 }

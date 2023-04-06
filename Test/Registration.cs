@@ -75,5 +75,11 @@ namespace Test
             Home home = new Home();
             home.ShowDialog();
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            TabControl tabControl = new TabControl();
+            tabControl.SelectedIndex = 2;
+        }
     }
 }

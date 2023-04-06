@@ -142,5 +142,26 @@ namespace Test
             Detail cart = new Detail();
             cart.ShowDialog();
         }
+
+        private void toolStripButton10_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
+        }
+
+        private void toolStripButton11_Click_2(object sender, EventArgs e)
+        {
+            this.Hide();
+            Profile profile = new Profile();
+            profile.ShowDialog();
+        }
+
+        private void toolStripButton9_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Detail cart = new Detail();
+            cart.ShowDialog();
+        }
     }
 }
