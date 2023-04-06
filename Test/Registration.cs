@@ -68,5 +68,12 @@ namespace Test
             Login login = new Login();
             login.ShowDialog();
         }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
+        }
     }
 }

@@ -40,5 +40,12 @@ namespace Test
         {
 
         }
+
+        private void toolStripButton5_Click_2(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
+        }
     }
 }

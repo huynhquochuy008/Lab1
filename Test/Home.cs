@@ -93,5 +93,54 @@ namespace Test
             Login login = new Login();
             login.ShowDialog();
         }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
+        }
+
+        private void toolStripButton14_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cart cart = new Cart();
+            cart.ShowDialog();
+        }
+
+        private void toolStripButton17_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cart cart = new Cart();
+            cart.ShowDialog();
+        }
+
+        private void toolStripButton20_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cart cart = new Cart();
+            cart.ShowDialog();
+        }
+
+        private void toolStripButton15_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Detail cart = new Detail();
+            cart.ShowDialog();
+        }
+
+        private void toolStripButton18_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Detail cart = new Detail();
+            cart.ShowDialog();
+        }
+
+        private void toolStripButton21_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Detail cart = new Detail();
+            cart.ShowDialog();
+        }
     }
 }
