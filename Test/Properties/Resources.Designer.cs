@@ -73,6 +73,26 @@ namespace Lab1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _063cb3f94f46b8fe35f706f82db133ec1 {
+            get {
+                object obj = ResourceManager.GetObject("063cb3f94f46b8fe35f706f82db133ec1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2021_Facebook_icon_svg {
+            get {
+                object obj = ResourceManager.GetObject("2021_Facebook_icon.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _330843926_3118216035139614_1960655562366559732_n {
             get {
                 object obj = ResourceManager.GetObject("330843926_3118216035139614_1960655562366559732_n", resourceCulture);
@@ -86,6 +106,46 @@ namespace Lab1.Properties {
         internal static System.Drawing.Bitmap _4f034086579c563b27ed360cf7f52009 {
             get {
                 object obj = ResourceManager.GetObject("4f034086579c563b27ed360cf7f52009", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap f7cacd4da64139b88acb667612d814ba {
+            get {
+                object obj = ResourceManager.GetObject("f7cacd4da64139b88acb667612d814ba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gioi_thieu_tiki1 {
+            get {
+                object obj = ResourceManager.GetObject("gioi-thieu-tiki1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_04_13_002749 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2023-04-13 002749", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_04_13_020013 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2023-04-13 020013", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

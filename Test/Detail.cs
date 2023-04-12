@@ -16,32 +16,13 @@ namespace Test
         {
             InitializeComponent();
         }
-
-        private void toolStripButton5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
-        }
-
-        private void Cart_Load(object sender, EventArgs e)
+              
+        private void Detail_Load_1(object sender, EventArgs e)
         {
 
         }
 
-        private void toolStripButton5_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
-        }
-
-        private void Detail_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripButton5_Click_2(object sender, EventArgs e)
+        private void toolStripButton5_Click_3(object sender, EventArgs e)
         {
             this.Hide();
             Home home = new Home();

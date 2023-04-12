@@ -88,11 +88,27 @@ namespace Test
 
         private void btnregister_Click_2(object sender, EventArgs e)
         {
-            tabPage2 = new TabPage();
-            tabPage2.Show();
+            tabControl1.SelectedIndex = 1;
         }
 
         private void btnLogin_Click_2(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
             Home home = new Home();

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             label1 = new Label();
             textBox1 = new TextBox();
             textBox3 = new TextBox();
@@ -41,9 +42,6 @@
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
-            label8 = new Label();
-            dgv_lsmh = new DataGridView();
-            btn_lsmh = new Button();
             toolStrip2 = new ToolStrip();
             toolStripButton5 = new ToolStripButton();
             toolStripButton6 = new ToolStripButton();
@@ -70,8 +68,16 @@
             toolStripButton9 = new ToolStripButton();
             toolStripButton10 = new ToolStripButton();
             toolStripButton11 = new ToolStripButton();
-            ((System.ComponentModel.ISupportInitialize)dgv_lsmh).BeginInit();
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            Column4 = new DataGridViewTextBoxColumn();
+            Column5 = new DataGridViewTextBoxColumn();
+            button1 = new Button();
             toolStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -79,7 +85,7 @@
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
             label1.Font = new Font("Trebuchet MS", 13.875F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(74, 311);
+            label1.Location = new Point(40, 156);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(268, 46);
@@ -89,7 +95,7 @@
             // textBox1
             // 
             textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox1.Location = new Point(82, 425);
+            textBox1.Location = new Point(51, 257);
             textBox1.Margin = new Padding(4, 2, 4, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
@@ -99,7 +105,7 @@
             // textBox3
             // 
             textBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox3.Location = new Point(82, 606);
+            textBox3.Location = new Point(51, 472);
             textBox3.Margin = new Padding(4, 2, 4, 2);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
@@ -109,7 +115,7 @@
             // textBox4
             // 
             textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox4.Location = new Point(82, 794);
+            textBox4.Location = new Point(60, 706);
             textBox4.Margin = new Padding(4, 2, 4, 2);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
@@ -119,7 +125,7 @@
             // textBox5
             // 
             textBox5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox5.Location = new Point(74, 996);
+            textBox5.Location = new Point(60, 933);
             textBox5.Margin = new Padding(4, 2, 4, 2);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
@@ -129,7 +135,7 @@
             // textBox6
             // 
             textBox6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            textBox6.Location = new Point(74, 1188);
+            textBox6.Location = new Point(60, 1152);
             textBox6.Margin = new Padding(4, 2, 4, 2);
             textBox6.Multiline = true;
             textBox6.Name = "textBox6";
@@ -141,7 +147,7 @@
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(95, 356);
+            label2.Location = new Point(51, 202);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(105, 33);
@@ -153,7 +159,7 @@
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(576, 356);
+            label3.Location = new Point(542, 201);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(0, 33);
@@ -164,7 +170,7 @@
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
             label4.Font = new Font("Tahoma", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(82, 544);
+            label4.Location = new Point(51, 437);
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(107, 33);
@@ -176,7 +182,7 @@
             label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label5.AutoSize = true;
             label5.Font = new Font("Tahoma", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(82, 730);
+            label5.Location = new Point(51, 653);
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(192, 33);
@@ -188,7 +194,7 @@
             label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label6.AutoSize = true;
             label6.Font = new Font("Tahoma", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(82, 928);
+            label6.Location = new Point(60, 878);
             label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
             label6.Size = new Size(90, 33);
@@ -200,54 +206,12 @@
             label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label7.AutoSize = true;
             label7.Font = new Font("Tahoma", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(74, 1118);
+            label7.Location = new Point(60, 1102);
             label7.Margin = new Padding(4, 0, 4, 0);
             label7.Name = "label7";
             label7.Size = new Size(140, 33);
             label7.TabIndex = 18;
             label7.Text = "Mật khẩu";
-            // 
-            // label8
-            // 
-            label8.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label8.AutoSize = true;
-            label8.Font = new Font("Tahoma", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(1358, 294);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(252, 33);
-            label8.TabIndex = 19;
-            label8.Text = "Lịch sử mua hàng";
-            // 
-            // dgv_lsmh
-            // 
-            dgv_lsmh.AllowUserToOrderColumns = true;
-            dgv_lsmh.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dgv_lsmh.BackgroundColor = SystemColors.ActiveCaption;
-            dgv_lsmh.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_lsmh.GridColor = SystemColors.ButtonHighlight;
-            dgv_lsmh.Location = new Point(921, 333);
-            dgv_lsmh.Margin = new Padding(4, 2, 4, 2);
-            dgv_lsmh.Name = "dgv_lsmh";
-            dgv_lsmh.ReadOnly = true;
-            dgv_lsmh.RowHeadersWidth = 82;
-            dgv_lsmh.RowTemplate.Height = 41;
-            dgv_lsmh.Size = new Size(1181, 883);
-            dgv_lsmh.TabIndex = 20;
-            // 
-            // btn_lsmh
-            // 
-            btn_lsmh.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btn_lsmh.BackColor = SystemColors.GradientActiveCaption;
-            btn_lsmh.Font = new Font("Segoe UI Black", 10.125F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_lsmh.Location = new Point(1484, 1180);
-            btn_lsmh.Margin = new Padding(4, 2, 4, 2);
-            btn_lsmh.Name = "btn_lsmh";
-            btn_lsmh.Size = new Size(143, 134);
-            btn_lsmh.TabIndex = 21;
-            btn_lsmh.Text = "Xem";
-            btn_lsmh.UseVisualStyleBackColor = false;
-            btn_lsmh.Click += btn_lsmh_Click;
             // 
             // toolStrip2
             // 
@@ -494,16 +458,89 @@
             toolStripButton11.Size = new Size(40, 40);
             toolStripButton11.Text = "toolStripButton11";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Control;
+            dataGridViewCellStyle1.Font = new Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, dataGridViewTextBoxColumn1, Column3, Column4, Column5 });
+            dataGridView1.Location = new Point(1016, 242);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 82;
+            dataGridView1.RowTemplate.Height = 41;
+            dataGridView1.Size = new Size(1286, 956);
+            dataGridView1.TabIndex = 23;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Tên sản phẩm";
+            Column1.MinimumWidth = 10;
+            Column1.Name = "Column1";
+            Column1.Width = 200;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Giá";
+            Column2.MinimumWidth = 10;
+            Column2.Name = "Column2";
+            Column2.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.HeaderText = "Số lượng";
+            dataGridViewTextBoxColumn1.MinimumWidth = 10;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Thành tiền";
+            Column3.MinimumWidth = 10;
+            Column3.Name = "Column3";
+            Column3.Width = 200;
+            // 
+            // Column4
+            // 
+            Column4.HeaderText = "Tình trạng đơn hàng";
+            Column4.MinimumWidth = 10;
+            Column4.Name = "Column4";
+            Column4.Width = 200;
+            // 
+            // Column5
+            // 
+            Column5.HeaderText = "Đánh giá";
+            Column5.MinimumWidth = 10;
+            Column5.Name = "Column5";
+            Column5.Width = 200;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Tahoma", 13.875F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(1544, 150);
+            button1.Name = "button1";
+            button1.Size = new Size(339, 65);
+            button1.TabIndex = 24;
+            button1.Text = "Lịch sử mua hàng";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Profile
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.InactiveCaption;
+            BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(2522, 1442);
+            Controls.Add(button1);
+            Controls.Add(dataGridView1);
             Controls.Add(toolStrip2);
-            Controls.Add(btn_lsmh);
-            Controls.Add(dgv_lsmh);
-            Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -520,9 +557,9 @@
             Name = "Profile";
             Text = "Profile";
             Load += Profile_Load;
-            ((System.ComponentModel.ISupportInitialize)dgv_lsmh).EndInit();
             toolStrip2.ResumeLayout(false);
             toolStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -540,11 +577,6 @@
         private Label label5;
         private Label label6;
         private Label label7;
-        private Label label8;
-        private DataGridView dgv_lsmh;
-        private Button btn_lsmh;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewTextBoxColumn Column4;
         private DataGridViewTextBoxColumn Column5;
@@ -574,5 +606,10 @@
         private ToolStripButton toolStripButton9;
         private ToolStripButton toolStripButton10;
         private ToolStripButton toolStripButton11;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private Button button1;
     }
 }

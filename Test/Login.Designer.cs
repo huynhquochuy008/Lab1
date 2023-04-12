@@ -31,25 +31,38 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            label11 = new Label();
+            label10 = new Label();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            button2 = new Button();
+            label9 = new Label();
+            label7 = new Label();
+            textBox6 = new TextBox();
+            label8 = new Label();
+            textBox7 = new TextBox();
             pictureBox1 = new PictureBox();
-            btnregister = new Button();
-            btnLogin = new Button();
-            txtpassword = new TextBox();
-            txtusername = new TextBox();
-            lb_pwd = new Label();
-            lb_username = new Label();
             tabPage2 = new TabPage();
+            pictureBox4 = new PictureBox();
             button1 = new Button();
-            txtconfirmpassword = new TextBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
+            label6 = new Label();
+            textBox5 = new TextBox();
+            label5 = new Label();
+            textBox4 = new TextBox();
+            label4 = new Label();
+            textBox3 = new TextBox();
+            label3 = new Label();
             textBox2 = new TextBox();
             label2 = new Label();
-            label3 = new Label();
+            textBox1 = new TextBox();
+            label1 = new Label();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -65,202 +78,305 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(label11);
+            tabPage1.Controls.Add(label10);
+            tabPage1.Controls.Add(pictureBox3);
+            tabPage1.Controls.Add(pictureBox2);
+            tabPage1.Controls.Add(button2);
+            tabPage1.Controls.Add(label9);
+            tabPage1.Controls.Add(label7);
+            tabPage1.Controls.Add(textBox6);
+            tabPage1.Controls.Add(label8);
+            tabPage1.Controls.Add(textBox7);
             tabPage1.Controls.Add(pictureBox1);
-            tabPage1.Controls.Add(btnregister);
-            tabPage1.Controls.Add(btnLogin);
-            tabPage1.Controls.Add(txtpassword);
-            tabPage1.Controls.Add(txtusername);
-            tabPage1.Controls.Add(lb_pwd);
-            tabPage1.Controls.Add(lb_username);
             tabPage1.Location = new Point(8, 46);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(2036, 1125);
             tabPage1.TabIndex = 0;
-            tabPage1.Text = "tabPage1";
+            tabPage1.Text = "Login";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Arial", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = SystemColors.Highlight;
+            label11.Location = new Point(489, 1006);
+            label11.Name = "label11";
+            label11.Size = new Size(439, 51);
+            label11.TabIndex = 30;
+            label11.Text = "Create New Account";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Arial", 16.125F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = SystemColors.Highlight;
+            label10.Location = new Point(35, 1006);
+            label10.Name = "label10";
+            label10.Size = new Size(374, 51);
+            label10.TabIndex = 29;
+            label10.Text = "Forgot Password";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(502, 850);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(129, 107);
+            pictureBox3.TabIndex = 28;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Lab1.Properties.Resources.Screenshot_2023_04_13_002749;
+            pictureBox2.Location = new Point(289, 850);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(89, 107);
+            pictureBox2.TabIndex = 27;
+            pictureBox2.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Red;
+            button2.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(198, 705);
+            button2.Name = "button2";
+            button2.Size = new Size(549, 109);
+            button2.TabIndex = 26;
+            button2.Text = "Login";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Tahoma", 22.125F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(366, 94);
+            label9.Name = "label9";
+            label9.Size = new Size(193, 71);
+            label9.TabIndex = 25;
+            label9.Text = "Login";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = SystemColors.ButtonHighlight;
+            label7.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.ForeColor = SystemColors.AppWorkspace;
+            label7.Location = new Point(300, 526);
+            label7.Name = "label7";
+            label7.Size = new Size(234, 55);
+            label7.TabIndex = 24;
+            label7.Text = "Password";
+            // 
+            // textBox6
+            // 
+            textBox6.BackColor = SystemColors.ButtonHighlight;
+            textBox6.Location = new Point(86, 486);
+            textBox6.Multiline = true;
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(815, 131);
+            textBox6.TabIndex = 23;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = SystemColors.ButtonHighlight;
+            label8.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.ForeColor = SystemColors.AppWorkspace;
+            label8.Location = new Point(300, 335);
+            label8.Name = "label8";
+            label8.Size = new Size(247, 55);
+            label8.TabIndex = 22;
+            label8.Text = "Username";
+            // 
+            // textBox7
+            // 
+            textBox7.BackColor = SystemColors.ButtonHighlight;
+            textBox7.Location = new Point(86, 299);
+            textBox7.Multiline = true;
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(815, 133);
+            textBox7.TabIndex = 21;
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1001, 98);
+            pictureBox1.Location = new Point(993, 105);
             pictureBox1.Margin = new Padding(6);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(903, 928);
+            pictureBox1.Size = new Size(911, 928);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
-            // btnregister
-            // 
-            btnregister.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnregister.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnregister.ForeColor = SystemColors.MenuHighlight;
-            btnregister.Location = new Point(204, 790);
-            btnregister.Margin = new Padding(6);
-            btnregister.Name = "btnregister";
-            btnregister.Size = new Size(405, 109);
-            btnregister.TabIndex = 12;
-            btnregister.Text = "Chưa có tài khoản";
-            btnregister.UseVisualStyleBackColor = true;
-            btnregister.Click += btnregister_Click_2;
-            // 
-            // btnLogin
-            // 
-            btnLogin.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            btnLogin.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnLogin.BackColor = SystemColors.MenuBar;
-            btnLogin.FlatStyle = FlatStyle.System;
-            btnLogin.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLogin.Location = new Point(273, 602);
-            btnLogin.Margin = new Padding(6);
-            btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(254, 111);
-            btnLogin.TabIndex = 11;
-            btnLogin.Text = "Đăng nhập";
-            btnLogin.UseVisualStyleBackColor = false;
-            btnLogin.Click += btnLogin_Click_2;
-            // 
-            // txtpassword
-            // 
-            txtpassword.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtpassword.Location = new Point(132, 429);
-            txtpassword.Margin = new Padding(6);
-            txtpassword.Multiline = true;
-            txtpassword.Name = "txtpassword";
-            txtpassword.Size = new Size(561, 123);
-            txtpassword.TabIndex = 10;
-            // 
-            // txtusername
-            // 
-            txtusername.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtusername.Location = new Point(132, 184);
-            txtusername.Margin = new Padding(6);
-            txtusername.Multiline = true;
-            txtusername.Name = "txtusername";
-            txtusername.Size = new Size(561, 115);
-            txtusername.TabIndex = 9;
-            // 
-            // lb_pwd
-            // 
-            lb_pwd.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lb_pwd.AutoSize = true;
-            lb_pwd.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lb_pwd.Location = new Point(132, 357);
-            lb_pwd.Margin = new Padding(6, 0, 6, 0);
-            lb_pwd.Name = "lb_pwd";
-            lb_pwd.Size = new Size(165, 39);
-            lb_pwd.TabIndex = 8;
-            lb_pwd.Text = "Mật khẩu";
-            // 
-            // lb_username
-            // 
-            lb_username.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lb_username.AutoSize = true;
-            lb_username.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lb_username.Location = new Point(132, 120);
-            lb_username.Margin = new Padding(6, 0, 6, 0);
-            lb_username.Name = "lb_username";
-            lb_username.Size = new Size(267, 39);
-            lb_username.TabIndex = 7;
-            lb_username.Text = "Tên người dùng";
-            // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(pictureBox4);
             tabPage2.Controls.Add(button1);
-            tabPage2.Controls.Add(txtconfirmpassword);
-            tabPage2.Controls.Add(label1);
-            tabPage2.Controls.Add(textBox1);
+            tabPage2.Controls.Add(label6);
+            tabPage2.Controls.Add(textBox5);
+            tabPage2.Controls.Add(label5);
+            tabPage2.Controls.Add(textBox4);
+            tabPage2.Controls.Add(label4);
+            tabPage2.Controls.Add(textBox3);
+            tabPage2.Controls.Add(label3);
             tabPage2.Controls.Add(textBox2);
             tabPage2.Controls.Add(label2);
-            tabPage2.Controls.Add(label3);
+            tabPage2.Controls.Add(textBox1);
+            tabPage2.Controls.Add(label1);
+            tabPage2.ForeColor = SystemColors.AppWorkspace;
             tabPage2.Location = new Point(8, 46);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(2036, 1125);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
+            tabPage2.Text = "Registation";
             tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.Click += tabPage2_Click;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Lab1.Properties.Resources.gioi_thieu_tiki1;
+            pictureBox4.Location = new Point(1189, 144);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(841, 934);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 22;
+            pictureBox4.TabStop = false;
             // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            button1.Font = new Font("Tahoma", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(886, 640);
-            button1.Margin = new Padding(6);
+            button1.BackColor = SystemColors.Highlight;
+            button1.Font = new Font("Arial", 28.125F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(79, 893);
             button1.Name = "button1";
-            button1.Size = new Size(312, 100);
+            button1.Size = new Size(1033, 167);
             button1.TabIndex = 21;
-            button1.Text = "Đăng ký ngay";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Text = "Create Account";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
-            // txtconfirmpassword
+            // label6
             // 
-            txtconfirmpassword.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            txtconfirmpassword.Location = new Point(930, 546);
-            txtconfirmpassword.Margin = new Padding(6);
-            txtconfirmpassword.Name = "txtconfirmpassword";
-            txtconfirmpassword.Size = new Size(409, 40);
-            txtconfirmpassword.TabIndex = 20;
-            txtconfirmpassword.UseSystemPasswordChar = true;
+            label6.AutoSize = true;
+            label6.BackColor = SystemColors.ButtonHighlight;
+            label6.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor = SystemColors.AppWorkspace;
+            label6.Location = new Point(491, 753);
+            label6.Name = "label6";
+            label6.Size = new Size(143, 55);
+            label6.TabIndex = 20;
+            label6.Text = "Email";
             // 
-            // label1
+            // textBox5
             // 
-            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(605, 557);
-            label1.Margin = new Padding(6, 0, 6, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(322, 39);
-            label1.TabIndex = 19;
-            label1.Text = "Xác nhận mật khẩu";
+            textBox5.BackColor = SystemColors.ButtonHighlight;
+            textBox5.Location = new Point(338, 729);
+            textBox5.Multiline = true;
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(467, 108);
+            textBox5.TabIndex = 19;
             // 
-            // textBox1
+            // label5
             // 
-            textBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox1.Location = new Point(930, 450);
-            textBox1.Margin = new Padding(6);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(409, 40);
-            textBox1.TabIndex = 18;
-            textBox1.UseSystemPasswordChar = true;
+            label5.AutoSize = true;
+            label5.BackColor = SystemColors.ButtonHighlight;
+            label5.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.AppWorkspace;
+            label5.Location = new Point(421, 561);
+            label5.Name = "label5";
+            label5.Size = new Size(372, 55);
+            label5.TabIndex = 18;
+            label5.Text = "Current Address";
             // 
-            // textBox2
+            // textBox4
             // 
-            textBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            textBox2.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(930, 361);
-            textBox2.Margin = new Padding(6);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(409, 46);
-            textBox2.TabIndex = 17;
+            textBox4.BackColor = SystemColors.ButtonHighlight;
+            textBox4.Location = new Point(338, 542);
+            textBox4.Multiline = true;
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(467, 108);
+            textBox4.TabIndex = 17;
             // 
-            // label2
+            // label4
             // 
-            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(605, 457);
-            label2.Margin = new Padding(6, 0, 6, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(165, 39);
-            label2.TabIndex = 16;
-            label2.Text = "Mật khẩu";
+            label4.AutoSize = true;
+            label4.BackColor = SystemColors.ButtonHighlight;
+            label4.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.AppWorkspace;
+            label4.Location = new Point(421, 376);
+            label4.Name = "label4";
+            label4.Size = new Size(341, 55);
+            label4.TabIndex = 16;
+            label4.Text = "Phone number";
+            // 
+            // textBox3
+            // 
+            textBox3.BackColor = SystemColors.ButtonHighlight;
+            textBox3.Location = new Point(338, 355);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(467, 108);
+            textBox3.TabIndex = 15;
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(605, 365);
-            label3.Margin = new Padding(6, 0, 6, 0);
+            label3.BackColor = SystemColors.ButtonHighlight;
+            label3.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.AppWorkspace;
+            label3.Location = new Point(703, 211);
             label3.Name = "label3";
-            label3.Size = new Size(252, 39);
-            label3.TabIndex = 15;
-            label3.Text = "Tên đăng nhập";
+            label3.Size = new Size(249, 55);
+            label3.TabIndex = 14;
+            label3.Text = "Last name";
+            // 
+            // textBox2
+            // 
+            textBox2.BackColor = SystemColors.ButtonHighlight;
+            textBox2.Location = new Point(660, 187);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(467, 108);
+            textBox2.TabIndex = 13;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = SystemColors.ButtonHighlight;
+            label2.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.AppWorkspace;
+            label2.Location = new Point(52, 211);
+            label2.Name = "label2";
+            label2.Size = new Size(250, 55);
+            label2.TabIndex = 2;
+            label2.Text = "First name";
+            // 
+            // textBox1
+            // 
+            textBox1.BackColor = SystemColors.ButtonHighlight;
+            textBox1.Location = new Point(24, 187);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(467, 108);
+            textBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Tahoma", 22.125F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.ActiveCaptionText;
+            label1.Location = new Point(431, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(279, 71);
+            label1.TabIndex = 0;
+            label1.Text = "Register";
             // 
             // Login
             // 
@@ -276,9 +392,12 @@
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
@@ -287,19 +406,29 @@
         private TabControl tabControl1;
         private TabPage tabPage1;
         private PictureBox pictureBox1;
-        private Button btnregister;
-        private Button btnLogin;
-        private TextBox txtpassword;
-        private TextBox txtusername;
-        private Label lb_pwd;
-        private Label lb_username;
         private TabPage tabPage2;
         private Button button1;
-        private TextBox txtconfirmpassword;
-        private Label label1;
-        private TextBox textBox1;
+        private Label label6;
+        private TextBox textBox5;
+        private Label label5;
+        private TextBox textBox4;
+        private Label label4;
+        private TextBox textBox3;
+        private Label label3;
         private TextBox textBox2;
         private Label label2;
-        private Label label3;
+        private TextBox textBox1;
+        private Label label1;
+        private Button button2;
+        private Label label9;
+        private Label label7;
+        private TextBox textBox6;
+        private Label label8;
+        private TextBox textBox7;
+        private Label label11;
+        private Label label10;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
     }
 }

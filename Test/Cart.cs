@@ -52,17 +52,17 @@ namespace Test
 
         private void btn_lsmh_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            using (cn)
-            {
-                using (SqlCommand cmd = new SqlCommand("SelectAllPurchases", cn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    dt.Load(reader);
-                }
-            }
-            dgv_lsmh.DataSource = dt;
+            //DataTable dt = new DataTable();
+            //using (cn)
+            //{
+            //    using (SqlCommand cmd = new SqlCommand("SelectAllPurchases", cn))
+            //    {
+            //        cmd.CommandType = CommandType.StoredProcedure;
+            //        SqlDataReader reader = cmd.ExecuteReader();
+            //        dt.Load(reader);
+            //    }
+            //}
+            //dgv_lsmh.DataSource = dt;
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
@@ -86,17 +86,17 @@ namespace Test
 
         private void btn_lsmh_Click_1(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            using (cn)
-            {
-                using (SqlCommand cmd = new SqlCommand("SelectAllPurchases", cn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    dt.Load(reader);
-                }
-            }
-            dgv_lsmh.DataSource = dt;
+            //DataTable dt = new DataTable();
+            //using (cn)
+            //{
+            //    using (SqlCommand cmd = new SqlCommand("SelectAllPurchases", cn))
+            //    {
+            //        cmd.CommandType = CommandType.StoredProcedure;
+            //        SqlDataReader reader = cmd.ExecuteReader();
+            //        dt.Load(reader);
+            //    }
+            //}
+            //dgv_lsmh.DataSource = dt;
         }
 
         private void Cart_Load_1(object sender, EventArgs e)

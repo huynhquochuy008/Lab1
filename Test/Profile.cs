@@ -13,43 +13,10 @@ namespace Test
 {
     public partial class Profile : Form
     {
-        SqlCommand cmd;
-        SqlConnection cn;
-        SqlDataReader dr;
-
         public Profile()
         {
             InitializeComponent();
         }
-
-        private void toolStripButton5_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
-        }
-
-        private void Profile_Load_1(object sender, EventArgs e)
-        {
-            cn = new SqlConnection(@"Data Source=DESKTOP-NNTQ8PP\SQLEXPRESS;Initial Catalog=LoginDatabse;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security=True");
-            cn.Open();
-        }
-
-        private void btn_lsmh_Click_1(object sender, EventArgs e)
-        {
-            DataTable dt = new DataTable();
-            using (cn)
-            {
-                using (SqlCommand cmd = new SqlCommand("SelectAllPurchases", cn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    dt.Load(reader);
-                }
-            }
-            dgv_lsmh.DataSource = dt;
-        }
-
         private void toolStripButton5_Click_1(object sender, EventArgs e)
         {
             this.Hide();
@@ -57,25 +24,22 @@ namespace Test
             home.ShowDialog();
         }
 
-        private void btn_lsmh_Click(object sender, EventArgs e)
-        {
-            DataTable dt = new DataTable();
-            using (cn)
-            {
-                using (SqlCommand cmd = new SqlCommand("SelectAllPurchases", cn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    dt.Load(reader);
-                }
-            }
-            dgv_lsmh.DataSource = dt;
-        }
-
         private void Profile_Load(object sender, EventArgs e)
         {
-            cn = new SqlConnection(@"Data Source=DESKTOP-NNTQ8PP\SQLEXPRESS;Initial Catalog=LoginDatabse;Trusted_Connection=True;TrustServerCertificate=True;Integrated Security=True");
-            cn.Open();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.dataGridView1.Rows.Add("Máy giặt", "1.000.000đ", "1", "1.000.000đ", "Sẵn sàng", "*****");
+            this.dataGridView1.Rows.Add("Máy đọc sách", "2.000.000đ", "2", "4.000.000đ", "Sẵn sàng", "*****");
+            this.dataGridView1.Rows.Add("Máy lạnh", "3.000.000đ", "3", "9.000.000đ", "Sẵn sàng", "*****");
+            this.dataGridView1.Rows.Add("Xe đạp", "4.000.000đ", "4", "16.000.000đ", "Sẵn sàng", "*****");
+            this.dataGridView1.Rows.Add("Điện thoại", "5.000.000đ", "5", "25.000.000đ", "Sẵn sàng", "*****");
         }
     }
 }
